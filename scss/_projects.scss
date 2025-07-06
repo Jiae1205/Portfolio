@@ -1,0 +1,40 @@
+.project-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  border: 2px solid #000;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;  // 카드들을 가로 정렬
+  justify-content: center;  // 가운데로 모으기
+  align-items: center;  // 위 기준 정렬 (또는 center)
+  gap: 2rem;  // 카드 간 간격
+  padding: 3rem;
+  font-family: 'Inter', sans-serif;
+
+  .project_1,
+  .project_2,
+  .project_3,
+  .project_4 {
+    background-color: #131431;
+    color: #F5F8F9;
+    border: 2px solid #000;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;  // 카드 내부 세로 정렬
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    height: 30rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

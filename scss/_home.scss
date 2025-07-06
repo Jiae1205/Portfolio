@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+
+  p {
+    font-size: 4rem;
+    color: #F5F8F9;
+    font-family: 'Joan', sans-serif;
+
+    span {
+      color: #06D6A0;
+      font-weight: bold;
+      font-family: 'Geist_Mono', sans-serif;
+    }
+  }
+
+  img {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 5rem;
+  }
+}

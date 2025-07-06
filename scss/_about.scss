@@ -1,0 +1,55 @@
+.about {
+  color: #F5F8F9;
+
+  h2 {
+    font-family: 'Joan', sans-serif;
+    font-size: 3rem;
+    padding: 2rem;
+
+    span {
+      font-family: 'Geist_Mono', sans-serif;
+      color: #06D6A0;
+    }
+  }
+
+  .content {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    padding: 0 2rem;
+
+    span {
+      color: #06D6A0;
+    }
+
+    .always {
+      text-align: center;
+      font-weight: bold;
+      padding: 2rem;
+
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding: 0 2rem 2rem 0;
+}
+
+.resume_link, .contact_link {
+  a {
+    display: inline-block;
+    color: #06D6A0;
+  }
+}
+
+.resume_link i, .contact_link i {
+  color: #06D6A0;
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+}
+
+}

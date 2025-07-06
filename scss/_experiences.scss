@@ -1,0 +1,59 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  .company {
+    width: 80%;
+    display: flex;
+
+    img {
+      width: 6rem;  // 원하는 크기
+      height: auto;
+      object-fit: contain; // 이미지 찌그러짐 방지
+    }
+
+    p {
+      border: 2px solid #F5F8F9;
+      border-radius: 1rem;
+      background-color: rgba(245, 248, 249, .5);
+      width: 20rem;
+      padding: 1rem;
+    }
+  }
+
+  .company_1, .company_3 {
+    justify-content: flex-start;
+  }
+
+  .company_2 {
+    justify-content: flex-end;
+    flex-direction: row;
+
+    img {
+      order: 2;
+    }
+
+    p {
+      order: 1;
+    }
+  }
+}
+
+.company_1, .company_2, .company_3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  // ← 수직 가운데 정렬
+  gap: 1rem;
+}
+
+.company:nth-child(2n-1) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.company:nth-child(2n) {
+  display: flex;
+  justify-content: flex-end;
+}

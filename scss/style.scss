@@ -1,0 +1,140 @@
+@use './body';
+@use './header';
+@use './home';
+@use './about';
+@use './projects';
+@use './skills';
+@use './experiences';
+@use './contact';
+@use './footer';
+
+@font-face {
+  font-family: 'Geist_Mono';
+  src: url(../font/Geist_Mono/GeistMono-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(../font/Inter/Inter-VariableFont_opsz\,wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Joan';
+  src: url(../font/Joan/Joan-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Mallanna';
+  src: url(../font/Mallanna/Mallanna-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 스타일 (SCSS 기준) */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 반응형 설정 */
+@media (max-width: 768px) {
+
+  header {
+    .navigation ul {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+
+    img {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+
+  .about {
+    .content {
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding: 1rem;
+
+    > div {
+      width: 100%;
+    }
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .center_icon {
+      order: -1;
+    }
+
+    .skill_name {
+      flex-direction: row;
+      justify-content: center;
+
+      i {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  .experiences {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    section {
+      width: 100%;
+    }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    .address_box,
+    .contact_me {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+
+    .message_box {
+      input {
+        width: 90%;
+      }
+    }
+  }
+}
